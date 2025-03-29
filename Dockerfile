@@ -13,6 +13,6 @@ EXPOSE 8080
 
 COPY --from=build /target/chatbot.jar app.jar
 
-ENV groq.api.key=${groq.api.key}
+ENV GROQ_API_KEY=${GROQ_API_KEY}
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
