@@ -4,6 +4,7 @@
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![Lombok](https://img.shields.io/badge/Lombok-%23FF9500.svg?style=for-the-badge&logo=lombok&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 JavaChatBot é um chatbot desenvolvido em Java usando Spring Boot. Ele se comunica com a API da Groq para gerar respostas com base em mensagens enviadas pelo usuário.
 
@@ -15,6 +16,7 @@ JavaChatBot é um chatbot desenvolvido em Java usando Spring Boot. Ele se comuni
 - Lombok
 - Maven
 - Groq API
+- Docker
 
 ## 📌 Funcionalidades
 
@@ -35,6 +37,7 @@ JavaChatBot/
 │   ├── services/GroqService.java
 │   ├── Application.java
 ├── pom.xml
+├── Dockerfile
 ├── README.md
 ```
 
@@ -54,6 +57,18 @@ JavaChatBot/
 3. Compile e execute o projeto:
    ```sh
    mvn spring-boot:run
+   ```
+
+## 🐳 Implantação com Docker
+
+1. Construa a imagem Docker:
+   ```sh
+   docker build -t java-chatbot .
+   ```
+
+2. Execute o container:
+   ```sh
+   docker run -d -p 8080:8080 -e GROQ_API_KEY="sua_chave_aqui" java-chatbot
    ```
 
 ## 🔥 Endpoints
@@ -84,6 +99,8 @@ JavaChatBot/
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Para sugerir melhorias ou corrigir bugs, abra uma issue ou envie um pull request.
+
+## ❤️ Feito com amor por Moostdev | João Gionda <3
 
 ## 📜 Licença
 
