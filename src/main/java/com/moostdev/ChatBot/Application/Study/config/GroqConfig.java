@@ -7,7 +7,7 @@ import org.springframework.web.client.RestTemplate;
 
 @Configuration
 public class GroqConfig {
-    @Value("${groq.api.key}")
+    @Value("${GROQ_API_KEY}")
     private String apiKey;
 
     @Bean
